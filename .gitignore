@@ -25,3 +25,10 @@ files.zip
 # Markdown/text docs don't belong in /images/
 images/*.md
 images/*.txt
+
+# Internal HTML reference snippets — not a real page
+seo-head-snippets.html
+
+# All Markdown is internal by default (blog posts on this site are HTML).
+# readme.md was added to the repo before this rule and stays tracked.
+*.md
