@@ -9,3 +9,19 @@ desktop.ini
 
 # Netlify CLI local state (created by `netlify link`)
 .netlify/
+
+# Internal strategy/working docs — must NOT be served publicly
+decisions_log.md
+changes_checklist.txt
+portfolio_removal_summary.md
+project_brief.md
+project_setup.md
+brand_assets.md
+voice_guide.md
+portfolio_reference.md
+files.zip
+/files/
+
+# Markdown/text docs don't belong in /images/
+images/*.md
+images/*.txt
