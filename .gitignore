@@ -1,0 +1,11 @@
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor scratch
+*.swp
+*~
+
+# Netlify CLI local state (created by `netlify link`)
+.netlify/

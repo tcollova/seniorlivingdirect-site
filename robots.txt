@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seniorlivingdirect.com/sitemap.xml

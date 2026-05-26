@@ -1,0 +1,9 @@
+# Redirect old site URLs to current pages
+/home                              /              301
+/gallery                           /portfolio     301
+/gallery/                          /portfolio     301
+/portfolio/project-name-ten        /portfolio     301
+/portfolio/project-name-ten/       /portfolio     301
+
+# Force www to non-www (Netlify usually handles this, but belt-and-suspenders)
+https://www.seniorlivingdirect.com/*  https://seniorlivingdirect.com/:splat  301

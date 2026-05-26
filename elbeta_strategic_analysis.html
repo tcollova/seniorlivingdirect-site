@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elbeta Gloves Strategic Analysis | Jeff S. Huff & Co.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Source+Serif+Pro:ital,wght@1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy-primary: #3D5B86;
+    --navy-dark: #2A4268;
+    --navy-deepest: #1A2540;
+    --navy-light: #4E6FA4;
+    --green-accent: #7CB342;
+    --green-bright: #8BC34A;
+    --green-soft: #9CCC65;
+    --gray-100: #F7F8FA;
+    --gray-200: #E8EBF0;
+    --gray-300: #C8CED9;
+    --gray-500: #6B7585;
+    --gray-700: #3A4254;
+    --white: #FFFFFF;
+    --shadow-sm: 0 2px 8px rgba(26, 37, 64, 0.06);
+    --shadow-md: 0 4px 16px rgba(26, 37, 64, 0.08);
+    --shadow-lg: 0 8px 32px rgba(26, 37, 64, 0.12);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--gray-100);
+    color: var(--navy-deepest);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .document {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: var(--white);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+
+  /* ============ COVER PAGE ============ */
+  .cover {
+    position: relative;
+    min-height: 950px;
+    background: var(--white);
+    overflow: hidden;
+  }
+
+  .cover-navy-band {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    background: var(--navy-primary);
+  }
+
+  .cover-green-line-top {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 280px;
+    height: 4px;
+    background: var(--green-accent);
+  }
+
+  .cover-stripes {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    height: 80px;
+  }
+
+  .stripe {
+    width: 100%;
+    height: 3px;
+    background: var(--white);
+    margin-bottom: 5px;
+  }
+
+  .stripe.green {
+    background: var(--green-accent);
+    height: 5px;
+  }
+
+  .cover-stripes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    padding-left: 0;
+  }
+
+  .cover-logo-frame {
+    position: absolute;
+    left: 80px;
+    top: 120px;
+    width: 320px;
+    height: 220px;
+    border: 4px solid var(--green-accent);
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .logo-mark {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 96px;
+    letter-spacing: -4px;
+    line-height: 1;
+    color: var(--navy-deepest);
+  }
+
+  .logo-mark .sh {
+    color: var(--navy-light);
+  }
+
+  .logo-tag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--navy-deepest);
+    margin-top: 12px;
+    font-weight: 600;
+  }
+
+  .cover-content {
+    position: absolute;
+    left: 460px;
+    top: 110px;
+    right: 80px;
+    z-index: 5;
+  }
+
+  .cover-eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--green-accent);
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  .cover-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    color: var(--navy-deepest);
+    line-height: 0.95;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+  }
+
+  .cover-subtitle {
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--navy-primary);
+    margin-bottom: 28px;
+    line-height: 1.3;
+  }
+
+  .cover-divider {
+    width: 80px;
+    height: 4px;
+    background: var(--green-accent);
+    margin: 28px 0;
+  }
+
+  .cover-description {
+    font-size: 14px;
+    color: var(--gray-700);
+    line-height: 1.7;
+    max-width: 500px;
+    font-weight: 400;
+  }
+
+  .cover-stats {
+    position: absolute;
+    left: 460px;
+    bottom: 140px;
+    right: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    z-index: 5;
+  }
+
+  .stat-card {
+    background: var(--white);
+    padding: 22px 18px;
+    border-left: 4px solid var(--green-accent);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .stat-card:nth-child(2) {
+    border-left-color: var(--navy-primary);
+  }
+
+  .stat-card:nth-child(3) {
+    border-left-color: var(--navy-light);
+  }
+
+  .stat-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--navy-deepest);
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+  .stat-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: var(--gray-500);
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .cover-footer {
+    position: absolute;
+    left: 460px;
+    bottom: 60px;
+    right: 80px;
+    border-top: 1px solid var(--gray-300);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+  }
+
+  .cover-footer-label {
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--navy-primary);
+  }
+
+  .cover-footer-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--gray-500);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  /* ============ PAGE LAYOUT ============ */
+  .page {
+    padding: 80px 80px 60px 80px;
+    border-bottom: 1px solid var(--gray-200);
+    position: relative;
+  }
+
+  .page:last-child {
+    border-bottom: none;
+  }
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--navy-primary);
+    position: relative;
+  }
+
+  .page-header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--green-accent);
+  }
+
+  .page-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--green-accent);
+    margin-right: 24px;
+  }
+
+  .page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--navy-deepest);
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+
+  .page-eyebrow {
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--navy-primary);
+    margin-left: auto;
+  }
+
+  /* ============ EXECUTIVE SUMMARY ============ */
+  .lead {
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--navy-primary);
+    margin-bottom: 40px;
+    padding-left: 24px;
+    border-left: 4px solid var(--green-accent);
+  }
+
+  .lead strong {
+    color: var(--navy-deepest);
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+
+  .findings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .finding-card {
+    padding: 28px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    position: relative;
+    transition: all 0.2s;
+  }
+
+  .finding-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--navy-primary);
+  }
+
+  .finding-card.green::before { background: var(--green-accent); }
+  .finding-card.navy-dark::before { background: var(--navy-deepest); }
+  .finding-card.light::before { background: var(--navy-light); }
+
+  .finding-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--green-accent);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .finding-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy-deepest);
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+  }
+
+  .finding-text {
+    font-size: 13.5px;
+    color: var(--gray-700);
+    line-height: 1.6;
+  }
+
+  .body-text {
+    font-size: 14.5px;
+    line-height: 1.75;
+    color: var(--gray-700);
+    margin-bottom: 18px;
+  }
+
+  .body-text strong {
+    color: var(--navy-deepest);
+    font-weight: 700;
+  }
+
+  .body-text em {
+    color: var(--navy-primary);
+    font-style: italic;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 15px;
+  }
+
+  /* ============ COMPANY SNAPSHOT ============ */
+  .snapshot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .snapshot-card {
+    padding: 32px;
+    background: var(--gray-100);
+    position: relative;
+    border-top: 4px solid var(--navy-primary);
+  }
+
+  .snapshot-card.accent {
+    border-top-color: var(--green-accent);
+  }
+
+  .snapshot-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--green-accent);
+    font-weight: 800;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+
+  .snapshot-card.accent .snapshot-label {
+    color: var(--navy-primary);
+  }
+
+  .snapshot-content {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--gray-700);
+  }
+
+  .snapshot-content strong {
+    color: var(--navy-deepest);
+    font-weight: 700;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+
+  .snapshot-content strong:first-child {
+    margin-top: 0;
+  }
+
+  /* ============ TABLES ============ */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 13px;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .styled-table thead tr {
+    background: var(--navy-primary);
+    color: var(--white);
+  }
+
+  .styled-table th {
+    padding: 16px 18px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .styled-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--gray-200);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  .styled-table tbody tr:nth-child(even) {
+    background: var(--gray-100);
+  }
+
+  .styled-table tbody tr:hover {
+    background: #F0F4FA;
+  }
+
+  .check {
+    color: var(--green-accent);
+    font-weight: 800;
+    margin-right: 6px;
+  }
+
+  .x-mark {
+    color: #D74343;
+    font-weight: 800;
+    margin-right: 6px;
+  }
+
+  /* ============ MARKET OPPORTUNITY ============ */
+  .market-block {
+    margin-bottom: 36px;
+    padding: 36px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-left: 6px solid var(--navy-primary);
+    position: relative;
+  }
+
+  .market-block.green {
+    border-left-color: var(--green-accent);
+  }
+
+  .market-block-header {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .market-region {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--navy-deepest);
+    letter-spacing: -0.5px;
+  }
+
+  .market-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--green-accent);
+    background: rgba(124, 179, 66, 0.1);
+    padding: 6px 14px;
+    border-radius: 2px;
+  }
+
+  .market-block.green .market-value {
+    color: var(--navy-primary);
+    background: rgba(61, 91, 134, 0.08);
+  }
+
+  .market-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--gray-700);
+    margin-bottom: 16px;
+  }
+
+  .sector-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+  }
+
+  .sector-list li {
+    font-size: 13px;
+    color: var(--gray-700);
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .sector-list li::before {
+    content: '▸';
+    color: var(--green-accent);
+    position: absolute;
+    left: 0;
+    font-weight: 800;
+  }
+
+  .market-meta {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--gray-200);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .meta-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--green-accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .meta-content {
+    font-size: 13px;
+    color: var(--gray-700);
+    line-height: 1.5;
+  }
+
+  /* ============ SERVICE LINES ============ */
+  .services-intro {
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--navy-primary);
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  .service-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 160px;
+    gap: 24px;
+    padding: 24px;
+    margin-bottom: 14px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-left: 5px solid var(--navy-primary);
+    align-items: center;
+    transition: all 0.2s;
+  }
+
+  .service-row:nth-child(odd) {
+    border-left-color: var(--green-accent);
+    background: linear-gradient(to right, rgba(124, 179, 66, 0.02), transparent);
+  }
+
+  .service-row:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(2px);
+  }
+
+  .service-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--green-accent);
+    line-height: 1;
+    text-align: center;
+  }
+
+  .service-row:nth-child(even) .service-number {
+    color: var(--navy-primary);
+  }
+
+  .service-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--navy-deepest);
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .service-content p {
+    font-size: 12.5px;
+    color: var(--gray-500);
+    line-height: 1.5;
+  }
+
+  .service-price {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .service-price-amount {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--navy-deepest);
+    line-height: 1;
+  }
+
+  .service-price-label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: var(--gray-500);
+    margin-top: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  /* ============ TOTAL VALUE BOX ============ */
+  .total-box {
+    margin-top: 36px;
+    background: var(--navy-primary);
+    color: var(--white);
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .total-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--green-accent);
+  }
+
+  .total-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--green-accent);
+  }
+
+  .total-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--green-accent);
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+
+  .total-subtitle {
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 20px;
+  }
+
+  .total-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 14px;
+  }
+
+  .total-note {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0.5px;
+  }
+
+  /* ============ RISK SECTION ============ */
+  .risk-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+
+  .risk-column {
+    padding: 32px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-top: 4px solid var(--green-accent);
+  }
+
+  .risk-column.negative {
+    border-top-color: #D74343;
+  }
+
+  .risk-column h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--green-accent);
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .risk-column.negative h3 {
+    color: #D74343;
+  }
+
+  .risk-list {
+    list-style: none;
+  }
+
+  .risk-list li {
+    padding: 12px 0 12px 32px;
+    border-bottom: 1px solid var(--gray-200);
+    font-size: 13.5px;
+    color: var(--gray-700);
+    line-height: 1.5;
+    position: relative;
+  }
+
+  .risk-list li:last-child {
+    border-bottom: none;
+  }
+
+  .risk-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 22px;
+    height: 22px;
+    background: var(--green-accent);
+    color: var(--white);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .risk-column.negative .risk-list li::before {
+    content: '!';
+    background: #D74343;
+  }
+
+  /* ============ PHASE TABLE ============ */
+  .phases {
+    margin: 30px 0;
+  }
+
+  .phase-row {
+    display: grid;
+    grid-template-columns: 100px 120px 1fr 140px;
+    gap: 24px;
+    padding: 24px 28px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-left: 5px solid var(--navy-primary);
+    margin-bottom: 12px;
+    align-items: center;
+  }
+
+  .phase-row.green { border-left-color: var(--green-accent); }
+  .phase-row.gold { border-left-color: var(--navy-light); }
+
+  .phase-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--green-accent);
+    font-weight: 800;
+  }
+
+  .phase-row.gold .phase-num { color: var(--navy-light); }
+
+  .phase-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--navy-deepest);
+    letter-spacing: -0.3px;
+  }
+
+  .phase-desc {
+    font-size: 13px;
+    color: var(--gray-700);
+    line-height: 1.5;
+  }
+
+  .phase-cost {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--navy-deepest);
+  }
+
+  /* ============ FINAL RECOMMENDATION ============ */
+  .verdict {
+    margin-top: 40px;
+    padding: 48px;
+    background: linear-gradient(135deg, var(--navy-primary) 0%, var(--navy-deepest) 100%);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .verdict::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: var(--green-accent);
+  }
+
+  .verdict-eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--green-accent);
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  .verdict-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+  }
+
+  .verdict-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 16px;
+  }
+
+  .verdict-text strong {
+    color: var(--green-bright);
+    font-weight: 600;
+  }
+
+  /* ============ CHARTS ============ */
+  .chart-container {
+    margin: 30px 0;
+    padding: 32px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+  }
+
+  .chart-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: var(--green-accent);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+
+  .chart-subtitle {
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--navy-primary);
+    margin-bottom: 24px;
+  }
+
+  /* Market Growth Chart */
+  .growth-chart {
+    height: 240px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 12px;
+    padding: 20px 0 40px 0;
+    border-bottom: 2px solid var(--navy-deepest);
+    position: relative;
+  }
+
+  .bar {
+    flex: 1;
+    background: var(--navy-primary);
+    position: relative;
+    transition: all 0.3s;
+    border-top: 4px solid var(--green-accent);
+  }
+
+  .bar.bar-growth-1 { height: 48%; background: var(--navy-light); }
+  .bar.bar-growth-2 { height: 52%; background: var(--navy-light); }
+  .bar.bar-growth-3 { height: 70%; background: var(--navy-primary); }
+  .bar.bar-growth-4 { height: 79%; background: var(--navy-primary); }
+  .bar.bar-growth-5 { height: 100%; background: var(--navy-deepest); border-top-color: var(--green-bright); }
+
+  .bar-value {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--navy-deepest);
+  }
+
+  .bar-label {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gray-500);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  /* Regional Market Chart */
+  .region-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 8px 0;
+  }
+
+  .region-bar-wrap {
+    display: grid;
+    grid-template-columns: 140px 1fr 80px;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .region-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy-deepest);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .region-bar-bg {
+    height: 36px;
+    background: var(--gray-100);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .region-bar-fill {
+    height: 100%;
+    background: var(--navy-primary);
+    position: relative;
+    transition: width 0.6s ease;
+  }
+
+  .region-bar-fill::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--green-accent);
+  }
+
+  .region-bar-fill.green {
+    background: var(--green-accent);
+  }
+  .region-bar-fill.green::after {
+    background: var(--navy-primary);
+  }
+
+  .region-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--navy-deepest);
+    text-align: right;
+  }
+
+  /* Competitor Market Share Donut */
+  .competitor-section {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 8px 0;
+  }
+
+  .donut-container {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+  }
+
+  .donut-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .donut-center-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--navy-deepest);
+    line-height: 1;
+  }
+
+  .donut-center-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: var(--gray-500);
+    margin-top: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .competitor-legend {
+    list-style: none;
+    padding: 0;
+  }
+
+  .competitor-legend li {
+    display: grid;
+    grid-template-columns: 16px 1fr 60px;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-200);
+    align-items: center;
+  }
+
+  .legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+  }
+
+  .legend-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--navy-deepest);
+  }
+
+  .legend-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--navy-primary);
+    text-align: right;
+  }
+
+  /* ============ FOOTER ============ */
+  .doc-footer {
+    background: var(--navy-deepest);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 40px 80px;
+    font-size: 11px;
+    line-height: 1.6;
+    position: relative;
+  }
+
+  .doc-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--green-accent);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 24px;
+  }
+
+  .footer-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--green-accent);
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .footer-content {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+  }
+
+  .footer-disclaimer {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 20px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .footer-tagline {
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--green-accent);
+    margin-top: 10px;
+  }
+
+  @media print {
+    body { background: white; }
+    .document { box-shadow: none; margin: 0; max-width: 100%; }
+    .page { page-break-inside: avoid; }
+    .cover { page-break-after: always; }
+  }
+</style>
+</head>
+<body>
+
+<div class="document">
+
+  <!-- ============ COVER PAGE ============ -->
+  <section class="cover">
+    <div class="cover-navy-band"></div>
+    <div class="cover-green-line-top"></div>
+    
+    <div class="cover-stripes">
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe green"></div>
+    </div>
+
+    <div class="cover-logo-frame">
+      <div class="logo-mark">J<span class="sh">SH</span></div>
+      <div class="logo-tag">JEFF S. HUFF &amp; CO, LLC</div>
+    </div>
+
+    <div class="cover-content">
+      <div class="cover-eyebrow">Strategic Market Assessment</div>
+      <h1 class="cover-title">ELBETA<br>GLOVES INC.</h1>
+      <div class="cover-divider"></div>
+      <p class="cover-subtitle">A consulting opportunity analysis for sales representation,<br>distributor management &amp; marketing services</p>
+      <p class="cover-description">An MBA-grade evaluation of Elbeta Gloves Inc. — a China-based safety glove manufacturer pursuing North American market expansion — including market sizing, competitive positioning, California and Southeastern U.S. opportunity analysis, and a phased engagement framework for JSH &amp; Co.</p>
+    </div>
+
+    <div class="cover-stats">
+      <div class="stat-card">
+        <div class="stat-value">$12.33B</div>
+        <div class="stat-label">Global Market 2025</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">$680M+</div>
+        <div class="stat-label">CA + SE Opportunity</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">$255–700K</div>
+        <div class="stat-label">Phase 1 Engagement</div>
+      </div>
+    </div>
+
+    <div class="cover-footer">
+      <div class="cover-footer-label">Sales Agents &nbsp;|&nbsp; Commercial Consultants &nbsp;|&nbsp; Creative Services</div>
+      <div class="cover-footer-date">May 2026 &nbsp;·&nbsp; Confidential</div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 1: EXECUTIVE SUMMARY ============ -->
+  <section class="page">
+    <div class="page-header">
+      <span class="page-number">01</span>
+      <h2 class="page-title">Executive Summary</h2>
+      <span class="page-eyebrow">at a glance</span>
+    </div>
+
+    <p class="lead">
+      <strong>Elbeta Gloves represents a strategic engagement opportunity</strong> for JSH &amp; Co. in a high-growth, regulated safety equipment market. The company has genuine manufacturing advantages but lacks the sales infrastructure, distributor management, and marketing execution required to capture meaningful share in California and the Southeastern United States — directly aligned with JSH's core service offering.
+    </p>
+
+    <div class="findings-grid">
+      <div class="finding-card">
+        <div class="finding-number">01 — MARKET TIMING</div>
+        <div class="finding-title">Growing, Regulated Market</div>
+        <p class="finding-text">Industrial safety gloves represent a $12.33B global market expanding 5.2–7.8% annually through 2030. North America commands 35% of demand, with the U.S. alone generating $2.6B in 2024 revenue. Structural tailwinds: OSHA regulation, workplace safety budgets, e-commerce/logistics growth.</p>
+      </div>
+
+      <div class="finding-card green">
+        <div class="finding-number">02 — COMPETITIVE GAP</div>
+        <div class="finding-title">Sales Infrastructure Missing</div>
+        <p class="finding-text">Elbeta has no documented regional sales team, weak digital marketing, and an underdeveloped distributor network. Competitors Ansell (10.5% share), Honeywell, and 3M dominate via 500+ distributor networks and dedicated regional reps — a clear, addressable gap.</p>
+      </div>
+
+      <div class="finding-card navy-dark">
+        <div class="finding-number">03 — GEOGRAPHIC WHITE SPACE</div>
+        <div class="finding-title">CA + SE Underserved</div>
+        <p class="finding-text">California ($280–320M) and the Southeast ($400–500M) represent $680–820M in addressable market that Elbeta has not penetrated. Both regions have clear customer segments and distributor recruitment opportunities suited to JSH's expertise.</p>
+      </div>
+
+      <div class="finding-card light">
+        <div class="finding-number">04 — ENGAGEMENT THESIS</div>
+        <div class="finding-title">$255K–700K+ Phase 1</div>
+        <p class="finding-text">Phase 1 scope — California market entry, distributor recruitment, sales structure — represents $50–100K initial engagement scaling to $255–700K within Year 1 across both regions, with Year 2+ potential at $300–500K ongoing.</p>
+      </div>
+    </div>
+
+    <p class="body-text">
+      <strong>Recommendation:</strong> Pursue a structured Phase 1 engagement focused on California, with discovery-stage scoping ($50–100K, 90 days) and clear success metrics — distributor signed, pipeline developed, sales compensation finalized. Conditional scale to the Southeast follows proof of traction. <em>This is a client worth pursuing — provided JSH structures the engagement conservatively, assesses Elbeta's execution capacity early, and gates expansion on demonstrated results.</em>
+    </p>
+  </section>
+
+  <!-- ============ PAGE 2: COMPANY PROFILE ============ -->
+  <section class="page">
+    <div class="page-header">
+      <span class="page-number">02</span>
+      <h2 class="page-title">Company Profile &amp; Market Context</h2>
+      <span class="page-eyebrow">the landscape</span>
+    </div>
+
+    <div class="snapshot-grid">
+      <div class="snapshot-card">
+        <div class="snapshot-label">Company Snapshot</div>
+        <div class="snapshot-content">
+          <strong>Founded</strong> 2009
+          <strong>Headquarters</strong> Huai'an, China (manufacturing)
+          <strong>U.S. Office</strong> Albany, New York (sales / administration)
+          <strong>Manufacturing Capacity</strong>
+          300+ digitalized automatic knitting machines<br>
+          5 self-made dipping lines (PU, Nitrile, Latex coating)<br>
+          R&amp;D Director with 3+ decades of industry experience
+          <strong>Go-to-Market</strong> Appointed-distributor model with single-market exclusivity; OEM/ODM customization for branded resellers
+          <strong>Trade Affiliations</strong> STAFDA member; A+A 2025 Düsseldorf exhibitor
+        </div>
+      </div>
+
+      <div class="snapshot-card accent">
+        <div class="snapshot-label">Market Landscape</div>
+        <div class="snapshot-content">
+          <strong>Global Market Value</strong> $12.33B (2025); $17.71B projected by 2030
+          <strong>Growth Rate</strong> 5.2–7.8% CAGR through 2030
+          <strong>North American Position</strong> 35% of global demand; U.S. = $2.6B (2024); U.S. = 86.5% of North American share
+          <strong>Demand Drivers</strong>
+          OSHA regulation &amp; compliance mandates<br>
+          Workforce safety awareness &amp; corporate liability<br>
+          Healthcare, construction, logistics growth<br>
+          Specialized protection (cut, heat, chemical)
+          <strong>Market Leaders</strong> Ansell (10.5%), Honeywell, 3M, MCR Safety, Superior Glove
+        </div>
+      </div>
+    </div>
+
+    <!-- Market Growth Chart -->
+    <div class="chart-container">
+      <div class="chart-title">Market Trajectory</div>
+      <div class="chart-subtitle">Industrial safety gloves market size, USD billions (2024–2030E)</div>
+      <div class="growth-chart">
+        <div class="bar bar-growth-1">
+          <span class="bar-value">$8.5B</span>
+          <span class="bar-label">2024</span>
+        </div>
+        <div class="bar bar-growth-2">
+          <span class="bar-value">$9.2B</span>
+          <span class="bar-label">2025</span>
+        </div>
+        <div class="bar bar-growth-3">
+          <span class="bar-value">$12.3B</span>
+          <span class="bar-label">2025E</span>
+        </div>
+        <div class="bar bar-growth-4">
+          <span class="bar-value">$14B</span>
+          <span class="bar-label">2030 (Low)</span>
+        </div>
+        <div class="bar bar-growth-5">
+          <span class="bar-value">$17.7B</span>
+          <span class="bar-label">2030 (High)</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 13px; letter-spacing: 2px; color: var(--green-accent); font-weight: 800; margin: 36px 0 16px 0; text-transform: uppercase;">Competitive Positioning Matrix</h3>
+
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th style="width: 22%">Dimension</th>
+          <th style="width: 39%">Elbeta Strengths</th>
+          <th style="width: 39%">Gap vs. Market Leaders</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Manufacturing Cost</strong></td>
+          <td><span class="check">✓</span>15–25% cost advantage (China-based production)</td>
+          <td><span class="x-mark">✗</span>Tariff exposure on Chinese goods; perception risk</td>
+        </tr>
+        <tr>
+          <td><strong>Product Innovation</strong></td>
+          <td><span class="check">✓</span>Advanced materials (HPPE, HTF, glass, steel); ANSI A4 certified</td>
+          <td><span class="x-mark">✗</span>Limited R&amp;D visibility &amp; case studies vs. Ansell</td>
+        </tr>
+        <tr>
+          <td><strong>Distribution Network</strong></td>
+          <td><span class="x-mark">✗</span>Limited, appointed-only model</td>
+          <td><span class="x-mark">✗</span>Honeywell &amp; Ansell field 500+ distributor relationships</td>
+        </tr>
+        <tr>
+          <td><strong>Brand Recognition</strong></td>
+          <td><span class="x-mark">✗</span>Minimal awareness in North America</td>
+          <td><span class="x-mark">✗</span>Major mindshare gap vs. category leaders</td>
+        </tr>
+        <tr>
+          <td><strong>Sales Infrastructure</strong></td>
+          <td><span class="x-mark">✗</span>No documented regional sales team</td>
+          <td><span class="x-mark">✗</span>Competitors field 50+ territory managers each</td>
+        </tr>
+        <tr>
+          <td><strong>Marketing Execution</strong></td>
+          <td><span class="x-mark">✗</span>Weak digital presence; passive inbound model</td>
+          <td><span class="x-mark">✗</span>Competitors spend $5M+ annually on marketing</td>
+        </tr>
+        <tr>
+          <td><strong>Customer Customization</strong></td>
+          <td><span class="check">✓</span>OEM/ODM capability for branded resellers</td>
+          <td><span class="x-mark">✗</span>Time zone &amp; language barriers slow service</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ============ PAGE 3: REGIONAL OPPORTUNITY ============ -->
+  <section class="page">
+    <div class="page-header">
+      <span class="page-number">03</span>
+      <h2 class="page-title">Regional Market Opportunity</h2>
+      <span class="page-eyebrow">CA + SE focus</span>
+    </div>
+
+    <!-- Regional Market Chart -->
+    <div class="chart-container">
+      <div class="chart-title">Addressable Market by Region</div>
+      <div class="chart-subtitle">Estimated industrial safety glove market opportunity, USD millions</div>
+      <div class="region-chart">
+        <div class="region-bar-wrap">
+          <div class="region-name">Southeast U.S.</div>
+          <div class="region-bar-bg">
+            <div class="region-bar-fill green" style="width: 100%;"></div>
+          </div>
+          <div class="region-value">$400–500M</div>
+        </div>
+        <div class="region-bar-wrap">
+          <div class="region-name">California</div>
+          <div class="region-bar-bg">
+            <div class="region-bar-fill" style="width: 68%;"></div>
+          </div>
+          <div class="region-value">$280–320M</div>
+        </div>
+        <div class="region-bar-wrap">
+          <div class="region-name">Rest of NA</div>
+          <div class="region-bar-bg">
+            <div class="region-bar-fill" style="width: 88%; opacity: 0.4;"></div>
+          </div>
+          <div class="region-value">$1.78B</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- California Block -->
+    <div class="market-block">
+      <div class="market-block-header">
+        <h3 class="market-region">California</h3>
+        <span class="market-value">$280–320M Addressable Market</span>
+      </div>
+      <p class="market-text">California is the single largest industrial market in North America. <strong>Elbeta has minimal documented distribution presence</strong> — representing significant white space for structured market entry. Cultural fit favors transactional, performance-driven sales motions over the relationship-led model common in the Southeast.</p>
+
+      <ul class="sector-list">
+        <li>Manufacturing (auto, aerospace, electronics)</li>
+        <li>Logistics &amp; warehousing (LA ports, Inland Empire)</li>
+        <li>Food processing (Central Valley)</li>
+        <li>Construction (statewide, especially SoCal)</li>
+        <li>Oil &amp; gas (coastal &amp; inland)</li>
+        <li>Specialty: cannabis, pharma, cleanroom</li>
+      </ul>
+
+      <div class="market-meta">
+        <div>
+          <div class="meta-label">Consulting Needs</div>
+          <div class="meta-content">Distributor recruitment &amp; vetting · territory strategy · pricing/margin analysis · competitor displacement · sales collateral customization</div>
+        </div>
+        <div>
+          <div class="meta-label">Estimated Phase 1 Engagement</div>
+          <div class="meta-content"><strong style="color: var(--navy-deepest); font-size: 16px; font-family: 'Montserrat', sans-serif;">$50K – $100K</strong><br>90-day pilot with distributor signed &amp; pipeline built as success criteria</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Southeast Block -->
+    <div class="market-block green">
+      <div class="market-block-header">
+        <h3 class="market-region">Southeastern United States</h3>
+        <span class="market-value">$400–500M Addressable Market</span>
+      </div>
+      <p class="market-text">The Southeast (FL, GA, NC, SC, VA, TN, AL, LA, TX) is high-growth and less saturated than the West Coast. Regional distributor networks are more fragmented — <strong>creating opportunity for aggressive new-entrant positioning</strong>. Cultural fit favors relationship-based sales motions and longer trust-building cycles.</p>
+
+      <ul class="sector-list">
+        <li>Warehouse hubs (Atlanta, Charlotte, Memphis)</li>
+        <li>Advanced manufacturing &amp; automotive supply</li>
+        <li>Food &amp; beverage processing (poultry, seafood)</li>
+        <li>Oil &amp; gas (Gulf Coast)</li>
+        <li>Agricultural cooperatives</li>
+        <li>Construction &amp; MRO supply chains</li>
+      </ul>
+
+      <div class="market-meta">
+        <div>
+          <div class="meta-label">Distinct Challenges</div>
+          <div class="meta-content">Relationship sales culture · seasonal demand · price sensitivity · need for localized tech support · fragmented distributor consolidation</div>
+        </div>
+        <div>
+          <div class="meta-label">Estimated Phase 2 Engagement</div>
+          <div class="meta-content"><strong style="color: var(--navy-deepest); font-size: 16px; font-family: 'Montserrat', sans-serif;">$60K – $150K</strong><br>Triggered by CA traction; multi-state distributor build &amp; market entry</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 4: SERVICE LINES ============ -->
+  <section class="page">
+    <div class="page-header">
+      <span class="page-number">04</span>
+      <h2 class="page-title">JSH Consulting Engagement Opportunity</h2>
+      <span class="page-eyebrow">five service lines</span>
+    </div>
+
+    <p class="services-intro">
+      Elbeta's organizational gaps map directly to JSH's three service pillars — <strong style="color: var(--navy-deepest); font-style: normal; font-family: 'Montserrat', sans-serif;">sales agency, commercial consulting, and creative services</strong>. The following five engagement areas, scoped individually or as a bundled Phase 1 retainer, address the highest-impact opportunities.
+    </p>
+
+    <div class="service-row">
+      <div class="service-number">01</div>
+      <div class="service-content">
+        <h3>Sales Force Structure &amp; Management</h3>
+        <p>Sales model design (direct vs. distributor) · territory planning &amp; quotas · compensation &amp; incentives · CRM implementation · sales training &amp; enablement</p>
+      </div>
+      <div class="service-price">
+        <div class="service-price-amount">$50–150K</div>
+        <div class="service-price-label">Strategy + Build</div>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="service-number">02</div>
+      <div class="service-content">
+        <h3>Distributor Channel Management</h3>
+        <p>Recruitment strategy &amp; vetting · channel agreement templates · territory protection rules · distributor training programs · QBR framework</p>
+      </div>
+      <div class="service-price">
+        <div class="service-price-amount">$75–200K</div>
+        <div class="service-price-label">Recruitment + Program</div>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="service-number">03</div>
+      <div class="service-content">
+        <h3>Regional Market Entry Strategy</h3>
+        <p>Market research &amp; sizing · customer segment mapping · go-to-market phasing · customer acquisition plan · high-value account planning</p>
+      </div>
+      <div class="service-price">
+        <div class="service-price-amount">$60–150K</div>
+        <div class="service-price-label">Per Region</div>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="service-number">04</div>
+      <div class="service-content">
+        <h3>Marketing &amp; Demand Generation</h3>
+        <p>Brand positioning &amp; messaging · website redesign · digital marketing strategy · sales collateral · trade show strategy (A+A, NSC)</p>
+      </div>
+      <div class="service-price">
+        <div class="service-price-amount">$40–120K</div>
+        <div class="service-price-label">Strategy + Execution</div>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="service-number">05</div>
+      <div class="service-content">
+        <h3>Customer Success &amp; Retention</h3>
+        <p>Account management framework · customer training programs · retention incentives · win-back campaigns · NPS &amp; performance tracking</p>
+      </div>
+      <div class="service-price">
+        <div class="service-price-amount">$30–80K</div>
+        <div class="service-price-label">Program Build</div>
+      </div>
+    </div>
+
+    <div class="total-box">
+      <div class="total-label">Total Phase 1 Engagement Potential</div>
+      <div class="total-subtitle">California + Southeast market entry · sales force build · distributor network</div>
+      <div class="total-value">$255K – $700K+</div>
+      <div class="total-note">Year 1 projected · Scale to $300–500K ongoing in Year 2+</div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 5: RISK & RECOMMENDATION ============ -->
+  <section class="page">
+    <div class="page-header">
+      <span class="page-number">05</span>
+      <h2 class="page-title">Risk Assessment &amp; Recommendation</h2>
+      <span class="page-eyebrow">go-forward strategy</span>
+    </div>
+
+    <div class="risk-grid">
+      <div class="risk-column">
+        <h3>Favorable Factors</h3>
+        <ul class="risk-list">
+          <li><strong>Market tailwinds:</strong> 5–7% CAGR through 2030, regulated &amp; growing</li>
+          <li><strong>Regulatory support:</strong> OSHA mandates drive replacement cycles</li>
+          <li><strong>Cost advantage:</strong> Elbeta's manufacturing is 15–25% below competitors</li>
+          <li><strong>White space:</strong> CA &amp; SE markets substantially underserved</li>
+          <li><strong>Capability fit:</strong> Elbeta's gaps map exactly to JSH's service lines</li>
+        </ul>
+      </div>
+
+      <div class="risk-column negative">
+        <h3>Risk Factors</h3>
+        <ul class="risk-list">
+          <li><strong>Execution capacity:</strong> Elbeta's U.S. operations appear under-resourced</li>
+          <li><strong>Capital limits:</strong> Marketing &amp; sales hire budgets may be constrained</li>
+          <li><strong>Coordination:</strong> Time zones, language, decision-making opacity</li>
+          <li><strong>Competitor response:</strong> Ansell &amp; Honeywell will defend share aggressively</li>
+          <li><strong>Tariff exposure:</strong> U.S. tariffs on Chinese goods could compress margin</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 13px; letter-spacing: 2px; color: var(--green-accent); font-weight: 800; margin: 40px 0 16px 0; text-transform: uppercase;">Recommended Engagement Roadmap</h3>
+
+    <div class="phases">
+      <div class="phase-row">
+        <div class="phase-num">PHASE 0</div>
+        <div class="phase-title">Discovery</div>
+        <div class="phase-desc">Deep-dive with Elbeta's U.S. leadership: budget authority, decision-making cadence, strategic commitment, execution capacity, scope alignment. Output: clear go/no-go.</div>
+        <div class="phase-cost">2 weeks<br><span style="font-size: 11px; color: var(--gray-500); font-weight: 600;">SCOPING</span></div>
+      </div>
+
+      <div class="phase-row green">
+        <div class="phase-num">PHASE 1</div>
+        <div class="phase-title">California Pilot</div>
+        <div class="phase-desc">California market entry: distributor recruitment, sales structure, pricing strategy, initial marketing collateral. Milestones: distributor signed, qualified pipeline built, sales comp finalized.</div>
+        <div class="phase-cost">$50–100K<br><span style="font-size: 11px; color: var(--gray-500); font-weight: 600;">90 DAYS</span></div>
+      </div>
+
+      <div class="phase-row gold">
+        <div class="phase-num">PHASE 2</div>
+        <div class="phase-title">Scale to Southeast</div>
+        <div class="phase-desc">Conditional on Phase 1 traction. Southeast entry, multi-state distributor build, national marketing program, ongoing sales management retainer, brand refresh, demand generation.</div>
+        <div class="phase-cost">$300–500K<br><span style="font-size: 11px; color: var(--gray-500); font-weight: 600;">YEAR 1–2</span></div>
+      </div>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-eyebrow">Bottom Line</div>
+      <h3 class="verdict-title">A client worth pursuing —<br>with conservative structure.</h3>
+      <p class="verdict-text">Elbeta is a legitimate strategic fit for JSH &amp; Co. The company operates in a high-growth, regulated market; has genuine cost and customization advantages; and has an organizational gap that maps precisely to JSH's core competencies in sales agency, channel management, and creative services.</p>
+      <p class="verdict-text"><strong>Financial Upside:</strong> If JSH execution is successful, Elbeta could achieve $20–50M in North American revenue within 3–5 years. JSH's services would be instrumental to that outcome, justifying premium consulting rates and creating substantial ongoing engagement potential.</p>
+      <p class="verdict-text">Structure Phase 1 conservatively with clear milestones. Assess Elbeta's execution capacity early. Scale only on proof of traction.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="doc-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-label">Prepared By</div>
+        <div class="footer-content">Jeff S. Huff &amp; Co., LLC<br>637-B South Broadway, #150<br>Boulder, CO 80305 USA</div>
+      </div>
+      <div>
+        <div class="footer-label">Contact</div>
+        <div class="footer-content">+1 (303) 946-4246<br>jeff@jeffshuff.com<br>jeffshuff.com</div>
+      </div>
+      <div>
+        <div class="footer-label">Report Status</div>
+        <div class="footer-content">Confidential · Internal Use<br>May 25, 2026<br>Version 1.0</div>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      This analysis is based on publicly available information, third-party market research databases, and industry intelligence current as of May 2026. Findings and engagement estimates are preliminary and should be validated through direct client engagement, executive discovery, and market verification before finalizing scope or commercial terms.
+    </div>
+    <div class="footer-tagline">Sales Agents &nbsp;|&nbsp; Commercial Consultants &nbsp;|&nbsp; Creative Services</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
