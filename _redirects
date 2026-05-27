@@ -5,5 +5,9 @@
 /portfolio/project-name-ten        /portfolio     301
 /portfolio/project-name-ten/       /portfolio     301
 
+# Removed content redirects
+/blog/mystery-shopping-your-community    /blog/ai-managed-social-media  301
+/blog/mystery-shopping-your-community/   /blog/ai-managed-social-media  301
+
 # Force www to non-www (Netlify usually handles this, but belt-and-suspenders)
 https://www.seniorlivingdirect.com/*  https://seniorlivingdirect.com/:splat  301
