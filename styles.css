@@ -273,6 +273,7 @@ p:last-child { margin-bottom: 0; }
   justify-content: space-between;
   padding: 2rem;
   color: var(--white);
+  z-index: 2;
 }
 .hero-stat {
   font-family: var(--sans);
@@ -810,8 +811,8 @@ p:last-child { margin-bottom: 0; }
   }
   .hero-visual {
     width: 100%;
-    aspect-ratio: 16/10;
-    max-width: 500px;
+    aspect-ratio: 3/4;
+    max-width: 100%;
   }
   .footer-grid { gap: 2rem; }
   .portfolio-item--wide { grid-column: span 1; }
