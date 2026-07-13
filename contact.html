@@ -87,12 +87,14 @@
 
       <div class="reveal">
         <!--
-          FORMSPREE SETUP:
-          1. Sign up at formspree.io (free for up to 50 submissions/month)
-          2. Create a new form and copy your form ID
-          3. Replace "YOUR_FORM_ID" in the action URL below
+          NETLIFY FORMS:
+          Submissions are captured by Netlify (no third-party account).
+          View them in the Netlify dashboard under Forms > "contact".
+          Set the notification email under Forms > Settings > Form notifications.
         -->
-        <form class="form" action="https://formspree.io/f/xbdwawyy" method="POST">
+        <form class="form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p hidden><label>Leave this field empty if you're human: <input name="bot-field"></label></p>
           <h3 style="margin-top: 0; margin-bottom: 0.5rem;">Send us a note.</h3>
           <p style="color: var(--ink-soft); font-size: 0.95rem; margin-bottom: 1.5rem;">Share as much or as little as you'd like.</p>
 
