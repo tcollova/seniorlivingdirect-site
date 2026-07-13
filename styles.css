@@ -945,6 +945,15 @@ p:last-child { margin-bottom: 0; }
   background: rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.8);
 }
+.blog-deck {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.15rem, 2.2vw, 1.4rem);
+  line-height: 1.45;
+  color: rgba(255,255,255,0.75);
+  max-width: 34ch;
+  margin-top: 1rem;
+}
 
 /* Article body */
 .blog-post {
