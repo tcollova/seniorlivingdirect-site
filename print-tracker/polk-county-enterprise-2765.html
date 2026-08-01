@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>CP Senior Living Print Ad Order Tracker — Polk County Enterprise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tracker.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="https://seniorlivingdirect.com/"><img src="https://seniorlivingdirect.com/images/SLDLogoonWhite.jpg" alt="Senior Living Direct"></a>
+    <span class="eyebrow">Print Ad Order Tracker</span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>CP Senior Living Print Ad Order Tracker</h1>
+    <p class="pub" id="heroPub"></p>
+    <div class="hero-meta">
+      <div><div class="label">Publication</div><div class="value">Polk County Enterprise</div></div>
+      <div><div class="label">Total budget (net)</div><div class="value" id="heroBudget"></div></div>
+      <div><div class="label">Included</div><div class="value" id="heroCount"></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="intro">
+  <div class="wrap">
+    <p>Thanks for running these for us. Fill in your contact details, a little about the paper,
+       and then the exact specs and cost for each ad you have scheduled this month.</p>
+    <p>Everything you enter comes straight back to you and to Senior Living Direct by email,
+       so we have one clean record of what is booked. Questions any time —
+       <a href="mailto:tcollova@seniorlivingdirect.com">tcollova@seniorlivingdirect.com</a>.</p>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <div id="errbox"></div>
+
+    <section class="card">
+      <header><h2>Your contact information</h2></header>
+      <div class="body">
+        <div class="grid grid-3">
+          <label class="field"><span class="lbl">Rep name <span class="req">*</span></span>
+            <input type="text" id="repName" autocomplete="name"></label>
+          <label class="field"><span class="lbl">Phone number <span class="req">*</span></span>
+            <input type="tel" id="repPhone" autocomplete="tel"></label>
+          <label class="field"><span class="lbl">Email address <span class="req">*</span></span>
+            <input type="email" id="repEmail" autocomplete="email">
+            <span class="hint">Your copy of this order goes here</span></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <header><h2>About Polk County Enterprise</h2>
+        <div class="sub">Just once, no matter how many ads are listed below. Thank you.</div>
+      </header>
+      <div class="body">
+        <div class="grid">
+          <label class="field"><span class="lbl">Circulation <span class="req">*</span></span>
+            <input type="text" id="circulation" placeholder="e.g. 12,400 daily / 15,800 Sunday"></label>
+          <label class="field"><span class="lbl">Markets served <span class="req">*</span></span>
+            <input type="text" id="marketsServed" placeholder="e.g. Henderson County and surrounding"></label>
+        </div>
+        <div style="margin-top:18px">
+          <span class="lbl" style="display:block;font-size:12px;font-weight:650;letter-spacing:.04em;text-transform:uppercase;color:#5A6272;margin-bottom:8px">Days published <span class="req">*</span></span>
+          <div class="checks" id="dayChecks"></div>
+          <label class="field" style="margin-top:12px;max-width:420px">
+            <span class="lbl">Other</span>
+            <input type="text" id="daysOther" placeholder="e.g. weekly TMC product, twice monthly shopper">
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <div id="divisions"></div>
+
+    <section class="card">
+      <header><h2>Order total</h2></header>
+      <div class="body">
+        <div class="trow grand" style="border-top:none;margin-top:0;padding-top:0">
+          <span>Total for Polk County Enterprise</span><span class="amt" id="order-total">$0.00</span>
+        </div>
+        <div class="verify">
+          <strong>This is the total amount to be paid.</strong>
+          Please verify this matches your calculation before submitting.
+        </div>
+        <label class="field" style="margin-top:20px">
+          <span class="lbl">Anything else we should know</span>
+          <textarea id="repNotes" placeholder="Deadlines, position notes, special sections, billing contact…"></textarea>
+        </label>
+      </div>
+    </section>
+
+    <div class="foot">
+      <strong>Creative comes from us.</strong>
+      <ul class="spec-list">
+        <li>All ads are designed by Senior Living Direct.</li>
+        <li>Files are supplied as high-resolution CMYK PDFs, all fonts outlined and images embedded.</li>
+        <li>Tell us your deadline in the notes above and we will build to your mechanical specs.</li>
+      </ul>
+      <p style="margin-top:14px">Questions: <a href="mailto:tcollova@seniorlivingdirect.com">tcollova@seniorlivingdirect.com</a> · 214-783-5779</p>
+    </div>
+  </div>
+</main>
+
+<div class="stickybar">
+  <div class="wrap">
+    <div class="figs">
+      <div><div class="label">Budget</div><div class="value" id="bar-budget">$0.00</div></div>
+      <div><div class="label">Entered</div><div class="value" id="bar-entered">$0.00</div></div>
+      <div><div class="label">Status</div><div class="value" id="bar-flag"></div></div>
+    </div>
+    <button type="button" class="btn-submit" id="submitBtn">Submit order</button>
+  </div>
+</div>
+
+<script>
+window.SLD_PAGE = {
+  "slug": "polk-county-enterprise",
+  "publication": "Polk County Enterprise",
+  "budgetTotal": 680.0,
+  "campaigns": [
+    {
+      "division": "Country Place Senior Living",
+      "market": "Livingston, TX",
+      "budget": 340.0,
+      "components": []
+    },
+    {
+      "division": "Country Place Memory Care",
+      "market": "Livingston, TX",
+      "budget": 340.0,
+      "components": []
+    }
+  ]
+};
+</script>
+<script src="assets/tracker.js"></script>
+</body>
+</html>
